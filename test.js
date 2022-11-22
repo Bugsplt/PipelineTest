@@ -1,5 +1,5 @@
 
-console.log("hi");
+console.lo
 function succesfullTest(){
     console.log('succesfullTest');
 }
