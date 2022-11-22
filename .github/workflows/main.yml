@@ -1,6 +1,8 @@
 on: [push]
 
 jobs:
+
+# runs a code quality check 
 #   check-quality:
 #     runs-on: ubuntu-latest
 #     name: A job to check my code quality
@@ -20,6 +22,7 @@ jobs:
 #         project_name: ''
 #         max_timeout_sec: '600'
         
+#         builds the javascript and executes
   build:
 
    runs-on: ubuntu-latest
