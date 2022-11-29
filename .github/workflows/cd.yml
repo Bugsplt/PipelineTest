@@ -19,5 +19,4 @@ jobs:
         script: |
           sudo su -
           cd /root/test/PipelineTest/
-          ls
-          git pull
+          sudo git pull
