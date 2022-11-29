@@ -55,5 +55,4 @@ jobs:
         - name: Build
           run: dotnet build --configuration Release --no-restore
         - name: Test
-          run: cd ..
-            dotnet test --no-build --verbosity normal
+          run: dotnet test --no-build --verbosity normal -f netcoreapp3.1
