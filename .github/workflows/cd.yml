@@ -20,6 +20,5 @@ jobs:
           sudo su -
           ls
           cd /root/test/PipelineTest/
-          ls
-          git pull origin master
+          git pull
           git status
