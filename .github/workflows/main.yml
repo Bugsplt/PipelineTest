@@ -55,4 +55,4 @@ jobs:
         - name: Build
           run: dotnet build --configuration Release --no-restore
         - name: Test
-          run: dotnet test bin/Debug/net7.0/TestProject1.dll --no-build --verbosity normal
+          run: dotnet test PipelineTest/bin/Debug/net7.0/TestProject1.dll --no-build --verbosity normal
