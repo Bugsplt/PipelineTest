@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0OPdMSaMb2gdfpX8A6F//bWZUlkbehtGUDf+YZv9uj9HYBqLlvSUO+PWCaFgSTZK7+1vbHJry+eSgGIlYKrd0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tombe\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\tombe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\tombe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

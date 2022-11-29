@@ -1,6 +1,8 @@
 on: [push]
 
 jobs:
+
+# runs a code quality check 
 #   check-quality:
 #     runs-on: ubuntu-latest
 #     name: A job to check my code quality
@@ -19,19 +21,38 @@ jobs:
 #         max_long_functions_rate: '0.0001'
 #         project_name: ''
 #         max_timeout_sec: '600'
-        
+
+#         builds the javascript and executes
+#  build:
+
+#  runs-on: ubuntu-latest
+
+#   strategy:
+#    matrix:
+#     node-version: [16.x]
+#   steps:
+#      - uses: actions/checkout@v3
+#      - name: Use Node.js ${{ matrix.node-version }}
+#        uses: actions/setup-node@v3
+#        with:
+#          node-version: ${{ matrix.node-version }}
+#      - run: npm ci
+#      - run: node test
+
+#       builds C# project
   build:
-
-   runs-on: ubuntu-latest
-
-   strategy:
-    matrix:
-     node-version: [16.x]
-   steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: node test
+    
+        runs-on: ubuntu-latest
+    
+        steps:
+        - uses: actions/checkout@v3
+        - name: Setup .NET Core
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: 7.0.x
+        - name: Install dependencies
+          run: dotnet restore
+        - name: Build
+          run: dotnet build --configuration Release --no-restore
+        - name: Test
+          run: dotnet test --no-build --verbosity normal
