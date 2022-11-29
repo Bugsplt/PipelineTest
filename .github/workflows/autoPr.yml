@@ -15,7 +15,7 @@ jobs:
       - name: Create report file
         run: date +%s > report.txt
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: Bugsplt/main@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Add report file
