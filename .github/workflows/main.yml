@@ -2,7 +2,7 @@ name: Build
 on:
   push:
     branches:
-      - create-pull-request/patch
+      - dev_tom
 #on: [pull_request]
 jobs:
 
