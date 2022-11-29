@@ -1,7 +1,6 @@
-on: [push]
-
+#on: [workflow_dispatch]
+on: [pull_request]
 jobs:
-
 # runs a code quality check 
 #   check-quality:
 #     runs-on: ubuntu-latest
@@ -40,19 +39,20 @@ jobs:
 #      - run: node test
 
 #       builds C# project
-#  build:
-#    
-#        runs-on: ubuntu-latest
-#    
-#        steps:
-#        - uses: actions/checkout@v3
-#        - name: Setup .NET Core
-#          uses: actions/setup-dotnet@v1
-#          with:
-#            dotnet-version: 7.0.x
-#        - name: Install dependencies
-#          run: dotnet restore
-#        - name: Build
-#          run: dotnet build --configuration Release --no-restore
-#        - name: Test
-#          run: dotnet test PipelineTest/bin/Debug/net7.0/TestProject1.dll --no-build --verbosity normal
+  build:
+        name: Build
+
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v3
+        - name: Setup .NET Core
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: 7.0.x
+        - name: Install dependencies
+          run: dotnet restore
+        - name: Build
+          run: dotnet build --configuration Release --no-restore
+        - name: Test
+          run: dotnet test PipelineTest/bin/Debug/net7.0/TestProject1.dll --no-build --verbosity normal
