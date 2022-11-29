@@ -1,5 +1,6 @@
-#on: [workflow_dispatch]
-on: [pull_request]
+name: Build
+on: [workflow_dispatch]
+#on: [pull_request]
 jobs:
 # runs a code quality check 
 #   check-quality:
@@ -56,3 +57,4 @@ jobs:
           run: dotnet build --configuration Release --no-restore
         - name: Test
           run: dotnet test PipelineTest/bin/Debug/net7.0/TestProject1.dll --no-build --verbosity normal
+          
