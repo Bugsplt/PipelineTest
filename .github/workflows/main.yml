@@ -1,6 +1,8 @@
 on: [push]
 
-jobs:
+name: CI
+
+#jobs:
 
 # runs a code quality check 
 #   check-quality:
