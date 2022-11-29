@@ -1,5 +1,5 @@
-#on: [workflow_dispatch]
-on: [pull_request]
+on: [workflow_dispatch]
+#on: [pull_request]
 jobs:
 # runs a code quality check 
 #   check-quality:
