@@ -20,4 +20,4 @@ jobs:
           sudo su -
           cd /root/test/PipelineTest/
           sudo git pull
-          sudo pm2 restart CRAPI
+#          sudo pm2 restart CRAPI
