@@ -18,7 +18,6 @@ jobs:
         port: 22
         script: |
           sudo su -
-          ls
           cd /root/test/PipelineTest/
+          ls
           git pull
-          git status
