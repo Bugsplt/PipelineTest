@@ -4,27 +4,27 @@
     "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\TestProject1\\TestProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj": {
+    "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj",
-        "projectName": "ClassLibrary1",
-        "projectPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj",
+        "projectUniqueName": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj",
+        "projectName": "ClassLibrary2",
+        "projectPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj",
         "packagesPath": "C:\\Users\\tombe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\obj\\",
+        "outputPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tombe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -48,20 +48,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.11, 6.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -93,8 +79,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj": {
-                "projectPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj"
+              "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj": {
+                "projectPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj"
               }
             }
           }

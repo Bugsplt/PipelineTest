@@ -1902,14 +1902,14 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "ClassLibrary1/1.0.0": {
+      "ClassLibrary2/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
+        "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/ClassLibrary1.dll": {}
+          "bin/placeholder/ClassLibrary2.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClassLibrary1.dll": {}
+          "bin/placeholder/ClassLibrary2.dll": {}
         }
       }
     }
@@ -6772,15 +6772,15 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "ClassLibrary1/1.0.0": {
+    "ClassLibrary2/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary1/ClassLibrary1.csproj",
-      "msbuildProject": "../ClassLibrary1/ClassLibrary1.csproj"
+      "path": "../ClassLibrary2/ClassLibrary2.csproj",
+      "msbuildProject": "../ClassLibrary2/ClassLibrary2.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ClassLibrary1 >= 1.0.0",
+      "ClassLibrary2 >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
@@ -6812,8 +6812,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj": {
-              "projectPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary1\\ClassLibrary1.csproj"
+            "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj": {
+              "projectPath": "C:\\Users\\tombe\\RiderProjects\\PipelineTest\\ClassLibrary2\\ClassLibrary2.csproj"
             }
           }
         }
