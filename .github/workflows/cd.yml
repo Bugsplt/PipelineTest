@@ -18,6 +18,6 @@ jobs:
         port: 22
         script: |
           sudo su -
-          cd test/PipelineTest/
+          cd ~/test/PipelineTest/
           git pull origin master
           git status
