@@ -3,13 +3,14 @@ name: CI notify
 # Only trigger, when the build workflow succeeded
 on:
   workflow_run:
+    branches:
+        - PipelineEntry
     workflows: ["Build"]
     types:
       - completed
 
 jobs:
   createPullRequest:
-    if: github.ref == 'refs/heads/PipelineEntry'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
