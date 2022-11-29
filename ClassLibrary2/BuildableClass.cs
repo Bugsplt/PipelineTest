@@ -6,4 +6,9 @@ public class BuildableClass
     {
         return a + b;
     }
+    
+    public int SubtractNumbers(int a, int b)
+    {
+        return a - b;
+    }
 }
