@@ -5,8 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<button onclick="sayHelloWorld()">say something!</button>
 <div id="div1">Test</div>
+<script>
+    function sayHelloWorld() {
+        document.getElementById("div1").innerHTML = "Hello World!";
+    }
+</script>
 </body>
+
 <style>
     #div1 {
         position: absolute;
