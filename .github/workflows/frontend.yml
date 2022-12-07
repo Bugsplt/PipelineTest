@@ -1,0 +1,17 @@
+name: frontendTests
+on:
+  workflow_run:
+    workflows: ["Node.js CD"]
+    types:
+      - completed
+
+jobs:
+  rainforest:
+    runs-on: ubuntu-latest
+    name: Run Rainforest
+    steps:
+      - name: Rainforest
+        uses: rainforestapp/github-action@master
+        with:
+          token: ${{ secrets.RAINFOREST_API_TOKEN }}
+          run_group_id: 13082
